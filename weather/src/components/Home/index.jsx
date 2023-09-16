@@ -173,7 +173,7 @@ function Home() {
         },
         boxShadow: {
           xs: 'none',
-          sm: 'rgba(0,0,0, 0.5) 0px 10px 15px 5px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
+          sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
         },
       }}
     >
@@ -197,7 +197,7 @@ function Home() {
               alt="logo"
               src={Logo}
             />
-  
+
             <UTCDatetime />
             <Button // Replace the GitHub icon with a Button for logout
               variant="contained"
@@ -211,13 +211,8 @@ function Home() {
         </Grid>
         {appContent}
       </Grid>
-      <footer style={{ marginTop: '1rem', textAlign: 'center', color: 'white', a:Link }}>
-        <br /><br />
-        <div> &copy; Copyright 2023, All rights reserved - Developed by <Link href="https://www.linkedin.com/in/pranav2036/" style={{color:'lightblue', textDecoration:'none'}}>Pranav</Link> and <Link href="https://www.linkedin.com/in/sivani-varada/" style={{color:'lightblue', textDecoration:'none'}}>Sivani</Link></div>
-      </footer>
     </Container>
   );
-  
 }
 
 export default Home;

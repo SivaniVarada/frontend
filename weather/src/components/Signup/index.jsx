@@ -19,7 +19,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8080/api/users";
+      const url = "http://52.66.168.188:8080/api/users";
       const { data: res } = await axios.post(url, data);
       setMsg(res.message)
     } catch (error) {
